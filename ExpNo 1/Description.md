@@ -50,10 +50,15 @@ Now, the Stack becomes empty, which means we have visited all the nodes, and our
 
 #ALGORITHM:
 Construct a Graph with Nodes and Edges.
+
 Depth First Search Uses Stack and Recursion.
+
 Insert a START node to the STACK.
+
 Find its Successors Or neighbors and Check whether the node is visited or not.
+
 If Not Visited, add it to the STACK. Else Call The Function Again Until No more nodes needs to be visited.
+
 SAMPLE INPUT:
 8 9
 A B
@@ -65,9 +70,9 @@ C G
 D F
 G F
 F H
-#SAMPLE OUTPUT:
+SAMPLE OUTPUT:
 ['A', 'B', 'E', 'D', 'C', 'G', 'F', 'H']
-#PROGRAM:
+PROGRAM:
 ```
 from collections import defaultdict
 def dfs(graph,start,visited,path):
