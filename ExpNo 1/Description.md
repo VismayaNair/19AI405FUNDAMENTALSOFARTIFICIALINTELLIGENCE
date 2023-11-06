@@ -10,22 +10,27 @@ Depth First Traversal (or DFS) for a graph is like Depth First Traversal of a tr
 Step 1:
 Initially, stack and visited arrays are empty.
 
-image
+![image](https://github.com/VismayaNair/19AI405FUNDAMENTALSOFARTIFICIALINTELLIGENCE/assets/93427210/103d49a1-bdcb-4372-9ba8-7b7b5cc01915)
+
 
 Queue and visited arrays are empty initially. Stack and visited arrays are empty initially.
 
 Step 2:
-Visit 0 and put its adjacent nodes which are not visited yet into the stack. image
+Visit 0 and put its adjacent nodes which are not visited yet into the stack. 
+![image](https://github.com/VismayaNair/19AI405FUNDAMENTALSOFARTIFICIALINTELLIGENCE/assets/93427210/4c900e74-d8ef-4a45-b56c-39ec4561d34b)
+
 
 Visit node 0 and put its adjacent nodes (1, 2, 3) into the stack Visit node 0 and put its adjacent nodes (1, 2, 3) into the stack
 
 Step 3:
-Now, Node 1 at the top of the stack, so visit node 1 and pop it from the stack and put all of its adjacent nodes which are not visited in the stack. image
+Now, Node 1 at the top of the stack, so visit node 1 and pop it from the stack and put all of its adjacent nodes which are not visited in the stack. ![image](https://github.com/VismayaNair/19AI405FUNDAMENTALSOFARTIFICIALINTELLIGENCE/assets/93427210/633b2dfb-7d13-48e3-8e75-99d96dd2b108)
+
 
 Visit node 1 Visit node 1
 
 Step 4:
-Now, Node 2 at the top of the stack, so visit node 2 and pop it from the stack and put all of its adjacent nodes which are not visited (i.e, 3, 4) in the stack. image
+Now, Node 2 at the top of the stack, so visit node 2 and pop it from the stack and put all of its adjacent nodes which are not visited (i.e, 3, 4) in the stack. ![image](https://github.com/VismayaNair/19AI405FUNDAMENTALSOFARTIFICIALINTELLIGENCE/assets/93427210/d26108ca-79f3-4703-809f-9819937d04df)
+
 
 Visit node 2 and put its unvisited adjacent nodes (3, 4) into the stack Visit node 2 and put its unvisited adjacent nodes (3, 4) into the stack
 
@@ -35,7 +40,8 @@ Now, Node 4 at the top of the stack, so visit node 4 and pop it from the stack a
 Visit node 4 Visit node 4
 
 Step 6:
-Now, Node 3 at the top of the stack, so visit node 3 and pop it from the stack and put all of its adjacent nodes which are not visited in the stack. image
+Now, Node 3 at the top of the stack, so visit node 3 and pop it from the stack and put all of its adjacent nodes which are not visited in the stack. ![image](https://github.com/VismayaNair/19AI405FUNDAMENTALSOFARTIFICIALINTELLIGENCE/assets/93427210/72ebb126-955b-4a22-bcdc-b0b2aa5fb82f)
+
 
 Visit node 3 Visit node 3
 
@@ -61,6 +67,7 @@ F H
 SAMPLE OUTPUT:
 ['A', 'B', 'E', 'D', 'C', 'G', 'F', 'H']
 PROGRAM:
+```
 from collections import defaultdict
 def dfs(graph,start,visited,path):
    path.append(start)
@@ -82,8 +89,10 @@ visited=defaultdict(bool)
 path=[]
 traversedpath=dfs(graph,start,visited,path)
 print(traversedpath)
+```
 OUTPUT:
-image
+![image](https://github.com/VismayaNair/19AI405FUNDAMENTALSOFARTIFICIALINTELLIGENCE/assets/93427210/3846b43c-5ebd-4826-bb1e-ff05eb94b59c)
+
 
 RESULT:
 Thus, a Graph was constructed and implementation of Depth First Search for the same graph was done successfully.
